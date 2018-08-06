@@ -77,7 +77,15 @@ function inReplyToEntity(inReplyTo) {
 /**
  * @description
  * Create a Web Intent for Twitter link
+ *
  * @param {Object} params
+ * @param {String} params.text
+ * @param {String} params.url
+ * @param {Array} params.hashtags
+ * @param {String} params.via
+ * @param {Array} params.related
+ * @param {Number} params.inReplyTo
+ *
  * @return {String}
  */
 function createLink(params) {

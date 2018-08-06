@@ -19,8 +19,14 @@ const params = {
     url: 'Tweet url', // optional String
     hashtags: ['some', 'cool', 'hashtags'], // optional Array of Strings
     via: 'twitterusername', // optional String
-    related: ['additional', 'twitter', 'usernames'], // optional Array of Strings,
-    inReplyTo: 'PARENT_TWEED_IT', // optional String
+    related: [{
+        username: 'letiagoalves',
+        description: 'developer'
+    }, {
+        username: 'twitter',
+        description: 'social network'
+    }], // optional Array of Objects,
+    inReplyTo: 1337, // optional Number
 };
 const tweetLink = twitterShare(params);
 ```
